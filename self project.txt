@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+<style>
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    align-items: center;
+    padding: 0px;
+    color: white;
+    z-index: 2; /* Ensure the header is above the background */
+    /* background: rgb(225, 9, 9); */
+  }
+
+  .box {
+    padding: 10px; /* Adjust size as needed */
+    margin-left: 10px; /* Add some spacing between boxes */
+    position: relative; /* Required for dropdown positioning */
+  }
+
+  .box a {
+    display: block; /* Make the anchor tag a block-level element */
+    color: black; /* Change text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Increase padding to increase hover size */
+  }
+
+  .box a:hover {
+    background-color: rgba(236, 11, 11, 0.3); /* Change background color on hover */
+  }
+
+  /* Dropdown styles */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-width: 160px;
+    z-index: 1;
+    top: 120%; /* Position dropdown below the box */
+    right: calc(100% - 160px); /* Align dropdown with the end of the navbar */
+  }
+
+  .box:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .logo img {
+    height: 30px; /* Adjust height of the logo image */
+    width: auto; /* Ensure image width adjusts proportionally */
+    margin-left: 20px; /* Add some spacing to the left of the logo */
+    margin-top: 5px;
+    z-index: 3 ;
+  }
+
+  .img {
+    text-align: center; /* Center the image */
+    margin-top: 40px; /* Add some space between navbar and image */
+    position: relative; /* Required for absolute positioning of text */
+  }
+
+  .img-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: light gray;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+    margin-top: 5px;
+  }
+
+  .information p {
+    
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .table {
+   
+    margin-top: 20px;
+    border-collapse: collapse;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+
+  .table td {
+    padding: 8px;
+    border: 1px solid black;
+    text-align: center;
+  }
+
+  .table th {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin-top: 20px;
+    
+  }
+
+  .heading{
+
+        margin-top: 50px;
+        margin-left: 0px;
+  }
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">
+    <img src="./pritwish-travels-high-resolution-logo-transparent.png" alt="Logo">
+  </div>
+  <div class="navbar">
+    <div class="box"><a href="#">Home</a></div>
+    <div class="box"><a href="#">Flight</a></div>
+    <div class="box"><a href="#">Hotel</a></div>
+    <div class="box">
+      <a href="#">Packages</a>
+      <div class="dropdown-content">
+        <a href="#">Holiday Package</a>
+        <a href="#">Family Package</a>
+        <a href="#">Honeymoon Package</a>
+      </div>
+    </div>
+    <div class="box"><a href="#">Contact Us</a></div>
+  </div>
+</nav>
+
+<div class="img">
+  <img src="./panoramic-view-snowy-mountains-upper-260nw-1185874780.jpg" alt="Snowy Mountains" width="100%" height="200px">
+  <div class="img-text">India Tour Packages</div>
+</div>
+
+<div class="information">
+  <p>Indian Holiday</p>
+
+  <p>
+    India tour packages offer a gateway to one of the most beautiful countries in the world, allowing travellers to explore its diverse landscapes and rich cultural tapestry. To fully comprehend and experience India’s geographical and cultural diversity, a wide range of the best tour packages in India are available for travellers to choose from.
+  </p>
+  
+  
+    <div class="table">
+        <div class="heading">
+
+            <p><h2>Bestselling India Tour Packages</h2></p>
+
+        </div>
+       
+        <table>
+          <tr>
+            <th>India Tour Package</th>
+            <th>Duration</th>
+            <th>Price</th>
+            <th>Inclusion</th>
+            <th>Details</th>
+          </tr>
+          <tr>
+            <td>Most Reasonable Goa Honeymoon Tour Packages</td>
+            <td>4 Nights/5 Days</td>
+            <td>₹11,000/-</td>
+            <td>Upto 2 Stars, Meals, Sightseeing, Airport Pickup-Drop, Private Cab</td>
+            <td>View details</td>
+          </tr>
+          <tr>
+            <td>Fantastic Andaman Honeymoon Package</td>
+            <td>14 Nights/5 Days</td>
+            <td>₹15,599/-</td>
+            <td>Upto 3 Stars, Meals, Sightseeing, Transfers, Watersports</td>
+            <td>View Details</td>
+          </tr>
+          <tr>
+            <td>Romantic Mussoorie Tour Package From Delhi</td>
+            <td>2 Nights/3 Days</td>
+            <td>₹10,500/-</td>
+            <td>Upto 3 Stars, Meals, Sightseeing, Transfers</td>
+            <td>View Details</td>
+          </tr>
+          <tr>
+            <td>Coorg Package</td>
+            <td>2 Nights/3 Days</td>
+            <td>₹16,200/-</td>
+            <td>Upto 3 Stars, Meals, Sightseeing, Stay Included, Transfers</td>
+            <td>View Details</td>
+          </tr>
+          <tr>
+            <td>Andaman Sightseeing Tour Package For A Refreshing Getaway</td>
+            <td>4 Nights/5 Days</td>
+            <td>₹33,200/-</td>
+            <td>Upto 3 Stars, Meals, Sightseeing,Stay Included, Transfers</td>
+            <td>View Details</td>
+          </tr>
+          <tr>
+            <td>Mesmerising Manali Trip Package From Chandigarh</td>
+            <td>2 Nights/3 Days</td>
+            <td>₹9,500/-</td>
+            <td>Upto 3 Stars, Meals, Sightseeing, Stay Included, Transfers</td>
+            <td>View Details</td>
+          </tr>
+
+          <tr>
+            <td>Hills & Houseboat: Munnar and Alleppey Honeymoon Packageh</td>
+            <td>5 Nights/6 Days</td>
+            <td>₹21,800/-</td>
+            <td>Upto 3 Stars, Meals, Sightseeing, Transfers, Honeymoon Freebies</td>
+            <td>View Details</td>
+          </tr>
+
+        </table>
+      </div>
+      
+ 
+ 
+</div>
+</body>
+</html>

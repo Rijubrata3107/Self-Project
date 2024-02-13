@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>cards</title>
+
+<style>
+body {
+    margin: 0px;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping of cards */
+    justify-content: flex-start; /* Align cards from the start */
+    gap: 15px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+/* Hide scrollbar */
+.rectangle::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar width */
+    background: transparent;  /* Set scrollbar background color to transparent */
+}
+
+/* Optionally, you can also hide scrollbar for Firefox */
+.rectangle {
+    scrollbar-width: none;  /* Firefox */
+}
+
+.card {
+    width: 150px;
+    height: 255px;
+    min-width: 150px; /* Set minimum width */
+    min-height: 225px; /* Set minimum height */
+    background-color: rgb(255, 255, 255);
+}
+
+.img-section {
+    width: 100%;
+    height: 75%;
+    background-color: blue;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.txt {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(62, 62, 62);
+}
+
+.pges {
+    margin: 0px;
+    font-size: 10px;
+    font-weight: bold;
+    color: gray;
+}
+
+.price {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+    color: green;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .card {
+        width: calc(33.33% - 15px); /* Adjust the width for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .card {
+        width: calc(50% - 15px); /* Adjust the width for even smaller screens */
+    }
+}
+</style>
+</head>
+<body>
+<div class="main">
+    <div class="rectangle">
+        <!-- First Card -->
+        <div class="card">
+            <div class="img-section">
+                <img src="./Andaman_Tour.webp">
+            </div>
+            <div class="txt">
+                <div class="txt1">
+                    <p class="name">Andaman</p>
+                    <p class="pges">72+ Packages</p>
+                </div>
+                <div class="txt2">
+                    <p class="pges">Starting From</p>
+                    <p class="price">&#8377;8,999</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Second Card -->
+        <div class="card">
+          <div class="img-section">
+              <img src="./Andaman_Tour.webp" />
+          </div>
+
+          <div class="txt">
+              <div class="txt1">
+                  <p class="name">Andaman</p>
+                  <p class="pges">72+ Packages</p>
+              </div>
+              <div class="txt2">
+                  <p class="pges">Starting From</p>
+                  <p class="price">&#8377;8,999</p>
+              </div>
+          </div>
+      </div>        <!-- Second Card -->
+      <div class="card">
+          <div class="img-section">
+              <img src="./Andaman_Tour.webp" />
+          </div>
+
+          <div class="txt">
+              <div class="txt1">
+                  <p class="name">Andaman</p>
+                  <p class="pges">72+ Packages</p>
+              </div>
+              <div class="txt2">
+                  <p class="pges">Starting From</p>
+                  <p class="price">&#8377;8,999</p>
+              </div>
+          </div>
+      </div>        <!-- Second Card -->
+      <div class="card">
+          <div class="img-section">
+              <img src="./Andaman_Tour.webp" />
+          </div>
+
+          <div class="txt">
+              <div class="txt1">
+                  <p class="name">Andaman</p>
+                  <p class="pges">72+ Packages</p>
+              </div>
+              <div class="txt2">
+                  <p class="pges">Starting From</p>
+                  <p class="price">&#8377;8,999</p>
+              </div>
+          </div>
+      </div>        <!-- Second Card -->
+      <div class="card">
+          <div class="img-section">
+              <img src="./Andaman_Tour.webp" />
+          </div>
+
+          <div class="txt">
+              <div class="txt1">
+                  <p class="name">Andaman</p>
+                  <p class="pges">72+ Packages</p>
+              </div>
+              <div class="txt2">
+                  <p class="pges">Starting From</p>
+                  <p class="price">&#8377;8,999</p>
+              </div>
+          </div>
+      </div>        <!-- Second Card -->
+      <div class="card">
+          <div class="img-section">
+              <img src="./Andaman_Tour.webp" />
+          </div>
+
+          <div class="txt">
+              <div class="txt1">
+                  <p class="name">Andaman</p>
+                  <p class="pges">72+ Packages</p>
+              </div>
+              <div class="txt2">
+                  <p class="pges">Starting From</p>
+                  <p class="price">&#8377;8,999</p>
+              </div>
+          </div>
+      </div>        <!-- Second Card -->
+      <div class="card">
+          <div class="img-section">
+              <img src="./Andaman_Tour.webp" />
+          </div>
+
+          <div class="txt">
+              <div class="txt1">
+                  <p class="name">Andaman</p>
+                  <p class="pges">72+ Packages</p>
+              </div>
+              <div class="txt2">
+                  <p class="pges">Starting From</p>
+                  <p class="price">&#8377;8,999</p>
+              </div>
+          </div>
+      </div>        <!-- Second Card -->
+      <div class="card">
+          <div class="img-section">
+              <img src="./Andaman_Tour.webp" />
+          </div>
+
+          <div class="txt">
+              <div class="txt1">
+                  <p class="name">Andaman</p>
+                  <p class="pges">72+ Packages</p>
+              </div>
+              <div class="txt2">
+                  <p class="pges">Starting From</p>
+                  <p class="price">&#8377;8,999</p>
+              </div>
+          </div>
+      </div>        <!-- Second Card -->
+      <div class="card">
+          <div class="img-section">
+              <img src="./Andaman_Tour.webp" />
+          </div>
+
+          <div class="txt">
+              <div class="txt1">
+                  <p class="name">Andaman</p>
+                  <p class="pges">72+ Packages</p>
+              </div>
+              <div class="txt2">
+                  <p class="pges">Starting From</p>
+                  <p class="price">&#8377;8,999</p>
+              </div>
+          </div>
+      </div>        <!-- Second Card -->
+      <div class="card">
+          <div class="img-section">
+              <img src="./Andaman_Tour.webp" />
+          </div>
+
+          <div class="txt">
+              <div class="txt1">
+                  <p class="name">Andaman</p>
+                  <p class="pges">72+ Packages</p>
+              </div>
+              <div class="txt2">
+                  <p class="pges">Starting From</p>
+                  <p class="price">&#8377;8,999</p>
+              </div>
+          </div>
+      </div>        <!-- Second Card -->
+      <div class="card">
+          <div class="img-section">
+              <img src="./Andaman_Tour.webp" />
+          </div>
+
+          <div class="txt">
+              <div class="txt1">
+                  <p class="name">Andaman</p>
+                  <p class="pges">72+ Packages</p>
+              </div>
+              <div class="txt2">
+                  <p class="pges">Starting From</p>
+                  <p class="price">&#8377;8,999</p>
+              </div>
+          </div>
+      </div>
+        
+        <!-- Add more cards here if needed -->
+    </div>
+</div>
+</body>
+</html>

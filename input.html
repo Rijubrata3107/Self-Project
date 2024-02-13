@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input</title>
+
+    <style>
+      .template {
+        margin-top: 120px;
+        margin-left: 250px;
+        width: 60%;
+        height: 20px; /* Set height to auto to adjust to content */
+        border: 2px solid black;
+        background-color: white;
+        padding: 13px; /* Add padding for spacing */
+      }
+
+      .location {
+        margin-bottom: 20px; /* Add margin to separate from other content */
+        height: 50px;
+        border: 1px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="template">
+      <div class="location">
+        <input
+          type="text"
+          id="countryInput"
+          placeholder="Choose Your Destination..."
+        />
+      </div>
+    </div>
+
+    <div class="tourBox">
+      <div class="tourBoxName">India Tour Packages</div>
+      <div class="tourBoxSelection">
+        <div class="tourBoxItems">
+          <div class="tourItem">
+            <select name="Destination" id="Destination">
+                <option value="India">India</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="China">China</option>
+                <option value="Bangladesh">Bangladesh</option>
+            </select>
+          </div>
+          <div class="tourItem">
+            <select name="tourDate" id="tourDate">
+                <option value="February, 2024">February, 2024</option>
+                <option value="March, 2024">March, 2024</option>
+                <option value="April, 2024">April, 2024</option>
+            </select>
+          </div>
+          <div class="tourItemExplore">Explore</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
