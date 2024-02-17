@@ -1,144 +1,233 @@
 .navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end; /* Align to the right */
-    align-items: center;
-    padding: 0px;
-    color: white;
-    z-index: 2; /* Ensure the header is above the background */
-    /* background: rgb(225, 9, 9); */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* Align to the right */
+  align-items: center;
+  padding: 0px;
+  color: white;
+  z-index: 2; /* Ensure the header is above the background */
+  /* background: rgb(225, 9, 9); */
+}
+
+.box {
+  padding: 10px; /* Adjust size as needed */
+  margin-left: 10px; /* Add some spacing between boxes */
+  position: relative; /* Required for dropdown positioning */
+}
+
+.box a {
+  display: block; /* Make the anchor tag a block-level element */
+  color: black; /* Change text color */
+  text-decoration: none; /* Remove underline */
+  padding: 10px; /* Increase padding to increase hover size */
+}
+
+.box a:hover {
+  background-color: rgba(
+    236,
+    11,
+    11,
+    0.3
+  ); /* Change background color on hover */
+}
+
+/* Dropdown styles */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  min-width: 160px;
+  z-index: 1;
+  top: 120%; /* Position dropdown below the box */
+  right: calc(100% - 160px); /* Align dropdown with the end of the navbar */
+}
+
+.box:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.logo img {
+  height: 30px; /* Adjust height of the logo image */
+  width: auto; /* Ensure image width adjusts proportionally */
+  margin-left: 20px; /* Add some spacing to the left of the logo */
+  margin-top: 5px;
+  z-index: 3;
+}
+
+.img_navbar {
+  text-align: center; /* Center the image */
+  margin-top: 40px; /* Add some space between navbar and image */
+  position: relative; /* Required for absolute positioning of text */
+}
+
+.img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: light gray;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+  margin-top: 5px;
+}
+
+.information p {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.table td {
+  padding: 8px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.table th {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin-top: 20px;
+}
+
+.heading {
+  margin-top: 50px;
+  margin-left: 0px;
+}
+
+.checkbox-container {
+  display: flex;
+  margin-top: 80px;
+  margin-left: 200px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.random {
+  padding-right: 8px;
+}
+
+.cb1 {
+  display: flex;
+  align-items: center;
+}
+.cb2 {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+body {
+  margin: 0px;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rectangle {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping of cards */
+  justify-content: flex-start; /* Align cards from the start */
+  gap: 15px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  margin-left: 350px;
+  margin-right: 350px;
+}
+
+/* Hide scrollbar */
+.rectangle::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar width */
+  background: transparent; /* Set scrollbar background color to transparent */
+}
+
+/* Optionally, you can also hide scrollbar for Firefox */
+.rectangle {
+  scrollbar-width: none; /* Firefox */
+}
+
+.card {
+  width: 150px;
+  height: 255px;
+  min-width: 150px; /* Set minimum width */
+  min-height: 225px; /* Set minimum height */
+  background-color: rgb(255, 255, 255);
+}
+
+/* .img-section {
+  width: 100%;
+  height: 75%;
+  background-color: blue;
+} */
+
+/* img {
+  width: 100%;
+  height: 100%;
+} */
+
+.txt {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  margin: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(62, 62, 62);
+}
+
+.pges {
+  margin: 0px;
+  font-size: 10px;
+  font-weight: bold;
+  color: gray;
+}
+
+.price {
+  margin: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: right;
+  color: green;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .card {
+    width: calc(33.33% - 15px); /* Adjust the width for smaller screens */
   }
+}
 
-  .box {
-    padding: 10px; /* Adjust size as needed */
-    margin-left: 10px; /* Add some spacing between boxes */
-    position: relative; /* Required for dropdown positioning */
+@media only screen and (max-width: 576px) {
+  .card {
+    width: calc(50% - 15px); /* Adjust the width for even smaller screens */
   }
-
-  .box a {
-    display: block; /* Make the anchor tag a block-level element */
-    color: black; /* Change text color */
-    text-decoration: none; /* Remove underline */
-    padding: 10px; /* Increase padding to increase hover size */
-  }
-
-  .box a:hover {
-    background-color: rgba(236, 11, 11, 0.3); /* Change background color on hover */
-  }
-
-  /* Dropdown styles */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
-    min-width: 160px;
-    z-index: 1;
-    top: 120%; /* Position dropdown below the box */
-    right: calc(100% - 160px); /* Align dropdown with the end of the navbar */
-  }
-
-  .box:hover .dropdown-content {
-    display: block;
-  }
-
-  .dropdown-content a {
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    display: block;
-  }
-
-  .dropdown-content a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-  }
-
-  .logo img {
-    height: 30px; /* Adjust height of the logo image */
-    width: auto; /* Ensure image width adjusts proportionally */
-    margin-left: 20px; /* Add some spacing to the left of the logo */
-    margin-top: 5px;
-    z-index: 3 ;
-  }
-
-  .img {
-    text-align: center; /* Center the image */
-    margin-top: 40px; /* Add some space between navbar and image */
-    position: relative; /* Required for absolute positioning of text */
-  }
-
-  .img-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 24px;
-    color: light gray;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
-    margin-top: 5px;
-  }
-
-  .information p {
-    
-    margin-left: 200px;
-    margin-right: 200px;
-  }
-
-  .table {
-   
-    margin-top: 20px;
-    border-collapse: collapse;
-    margin-left: 200px;
-    margin-right: 200px;
-  }
-
-
-  .table td {
-    padding: 8px;
-    border: 1px solid black;
-    text-align: center;
-  }
-
-  .table th {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    margin-top: 20px;
-    
-  }
-
-  .heading{
-
-        margin-top: 50px;
-        margin-left: 0px;
-  }
-
-  .checkbox-container {
-        display: flex;
-        margin-top: 80px;
-        margin-left: 200px;
-        
-    }
-
-    .checkbox-container input[type="checkbox"] {
-        margin-right: 5px;
-    }
-
-    .random{
-
-        padding-right: 8px;
-    }
-
-    .cb1{
-        display: flex;
-        align-items: center;
-
-    }
-    .cb2{
-        display: flex;
-        align-items: center;
-        margin-left: 5px;
-    }
-  
-  
+}

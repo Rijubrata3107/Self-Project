@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .inline-block-example {
+            display: inline-block;
+            width: 200px; /* Example width */
+            background-color: lightblue;
+            padding: 10px;
+            border: 1px solid blue;
+            margin-right: 20px; /* Add margin to create space between the two divs */
+        }
+
+        .second-div {
+            display: inline-flex;
+            width: 200px; /* Example width */
+            height:100px;
+            background-color: lightgreen; /* Different background color for differentiation */
+            padding: 10px;
+            border: 1px solid green; /* Different border color for differentiation */
+            flex-wrap: wrap;
+        }
+
+        .inner{
+            
+            height: 20px;
+            width:30px;
+            border-radius: 20px;
+            background-color: brown;
+            text-align: center;
+            margin-left: 5px;
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="inline-block-example">
+        <p>This is an example of inline-block.</p>
+        <p>It combines features of both inline and block elements.</p>
+    </div>
+    
+    <!-- Second div alongside the first one -->
+    <div class="second-div">
+       <div class="inner">one</div>
+       <div class="inner">one</div>
+       <div class="inner">one</div>
+       <div class="inner">one</div>
+       <div class="inner">one</div>
+       <div class="inner">one</div>
+       <div class="inner">one</div>
+       <div class="inner">one</div>
+       <div class="inner">one</div>
+       <div class="inner">one</div>
+       <div class="inner">one</div>
+       <div class="inner">one</div>
+       
+    </div>
+</body>
+</html>
