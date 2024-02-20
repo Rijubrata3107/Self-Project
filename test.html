@@ -37,93 +37,106 @@
         height: auto;
         display: inline-block; /* Added */
         vertical-align: top; /* Aligns the text to the top of the image */
-				padding-top: 8px;
-			
-				
+        padding-top: 8px;
       }
 
-			.c-pack{
+      .c-pack {
+        color: rgb(0, 0, 0);
+        margin-top: 18px;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 20px;
+        display: inline;
+      }
 
-				color: rgb(0, 0, 0);
-				margin-top: 18px;
-				font-weight: 900;
-				font-size: 16px;
-				line-height: 20px;
-				display: inline;
-				
-				
-			}
+      .c-duration {
+        padding-top: 0px;
+        margin-bottom: 8px;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 16px;
+        color: #f07c00;
+      }
 
-			.c-duration{
+      .c-information {
+        padding-top: 5px;
+        margin-top: 0 !important;
+        margin-bottom: 10px;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 16px;
+        color: #b2b2b2;
+      }
 
-				padding-top: 0px;
-				margin-bottom: 8px;
-				font-size: 13px;
-				font-weight: 700;
-				line-height: 16px;
-				color: #f07c00;
+      .c-price {
+        padding-top: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 34px;
+        font-weight: 900;
+        line-height: 28px;
+        color: green;
+      }
 
-			}
+      .h-select {
+        padding-top: 0px;
+        margin: 0 !important;
+        margin-bottom: 4px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        color: #3e3e3e;
+      }
 
-			.c-information{
-
-				padding-top: 5px;
-				margin-top: 0! important;
-				margin-bottom: 10px;
-				font-size: 15px;
-				font-weight: 400;
-				line-height: 16px;
-				color: #b2b2b2;
-			}
-
-			.c-price{
-
-				padding-top: 0px;
-				margin-top: 0px;
-				margin-bottom: 0px;
-				font-size: 34px;
-				font-weight: 900;
-				line-height: 28px;
-				color: green;
-				
-
-			}
-
-			.h-select{
-
-				padding-top: 0px;
-				margin : 0!important;
-				margin-bottom: 4px;
-				font-size: 14px;
-				font-weight: 700;
-				line-height: 16px;
-				color: #3e3e3e;
-
-
-			}
-
-			.c-other{
-
-				display: inline-flex;
-        width: 200px; /* Example width */
-        height:100px;
-        background-color: lightgreen; /* Different background color for differentiation */
+      .c-other {
+        display: inline-flex;
+        width: 200px;
+        height: 55px;
+        /* background-color: lightgreen; */
         padding: 10px;
-        border: 1px solid green; /* Different border color for differentiation */
+        /* border: 1px solid green; */
+        justify-content: end;
+        /* margin-top: 100px; */
+        transform: translateY(-100px); /* Adjust this value as needed */
         flex-wrap: wrap;
-			
-			} 
+      }
 
-			.c-right{
-
-				height: 20px;
-        width:30px;
+      .c-right {
+        height: 20px;
+        width: auto;
         border-radius: 20px;
-        background-color: brown;
+        border: 1px solid #b2b2b2;
+        color: #b2b2b2;
+        font-size: 12px;
+        /* background-color: brown; */
         text-align: center;
         margin-left: 5px;
+        padding: 0px 13px;
+        
+       
+        
+        
+      }
+      /* 
+       .right{
+        display: inline-block;
+        width: 200px;
+        height: 150px;
+        background-color: #f07c00;
+      }  */
 
-			}
+      .added {
+        display: inline-block;
+        margin-top: 28px;
+        margin-left: 18px;
+      }
+
+      .added2 {
+        display: inline-block;
+        /* display: inline-flex;
+        justify-content: flex-end; */
+        margin-left: 180px;
+      }
     </style>
   </head>
   <body>
@@ -139,27 +152,30 @@
           <p class="c-price">&#8377;10,000/-</p>
           <p class="c-information">Per Person on twin sharing</p>
           <div class="c-hotel">
-
             <p class="h-select">Hotel included in package:</p>
-            
-            <input type="radio" id="hotel1" name="select-hotel" value="2" /> 
-            <label for="hotel1">2 Star</label>
-            <input type="radio" id="hotel2" name="select-hotel" value="3" /> 
-            <label for="hotel2"> 3 Star</label>
-        		<input type="radio" id="hotel3" name="select-hotel" value="4"/>
-            <label for="hotel3">4 Star</label>
 
+            <input type="radio" id="hotel1" name="select-hotel" value="2" />
+            <label for="hotel1">2 Star</label>
+            <input type="radio" id="hotel2" name="select-hotel" value="3" />
+            <label for="hotel2"> 3 Star</label>
+            <input type="radio" id="hotel3" name="select-hotel" value="4" />
+            <label for="hotel3">4 Star</label>
           </div>
         </div>
-				<!-- <hr> -->
+        <div class="c-other">
+          <div class="c-right">Hot Pick</div>
+          <div class="c-right">Water Activities</div>
+          <div class="c-right">Romantic Cruise</div>
+          <div class="c-right">Adventure</div>
+        </div>
+        <hr />
 
-				<div class="c-other">
-					<div class="c-right">Hot Pick</div>
-					<div class="c-right">Water Activities</div>
-					<div class="c-right">Romantic Cruise</div>
-					<div class="c-right">Adventure</div>
-				</div>
-
+        <div class="card-down">
+          <div class="added">Upto 2 Stars</div>
+          <div class="added">Meals</div>
+          <div class="added">Sightseeing</div>
+          <div class="added2">View Details</div>
+        </div>
       </div>
     </div>
   </body>
