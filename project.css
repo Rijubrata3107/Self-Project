@@ -26,12 +26,12 @@
 }
 
 .box a:hover {
-  background-color: rgba(
+  background-color: rgba
     236,
     11,
     11,
     0.3
-  ); /* Change background color on hover */
+  ; /* Change background color on hover */
 }
 
 /* Dropdown styles */
@@ -86,15 +86,15 @@
 }
 
 .information p {
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 270px;
+  margin-right: 270px;
 }
 
 .table {
   margin-top: 20px;
   border-collapse: collapse;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 270px;
+  margin-right: 270px;
 }
 
 .table td {
@@ -116,8 +116,9 @@
 
 .checkbox-container {
   display: flex;
-  margin-top: 80px;
-  margin-left: 200px;
+  margin-top: 40px;
+  margin-left: 270px;
+  
 }
 
 .checkbox-container input[type="checkbox"] {
@@ -126,16 +127,19 @@
 
 .random {
   padding-right: 8px;
+  font-size: 23px;
 }
 
 .cb1 {
   display: flex;
   align-items: center;
+  font-size: 23px;
 }
 .cb2 {
   display: flex;
   align-items: center;
   margin-left: 5px;
+  font-size: 23px;
 }
 
 body {
@@ -144,11 +148,11 @@ body {
 
 .main {
   width: 100vw;
-  height: 100vh;
+  
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  /* justify-content: center; */
+  /* align-items: center; */
+} 
 
 .rectangle {
   display: flex;
@@ -156,8 +160,9 @@ body {
   justify-content: flex-start; /* Align cards from the start */
   gap: 15px;
   overflow-x: auto; /* Enable horizontal scrolling */
-  margin-left: 350px;
-  margin-right: 350px;
+  margin-left: 270px;
+  margin-right: 270px;
+  margin-top: 40px;
 }
 
 /* Hide scrollbar */
@@ -230,4 +235,91 @@ body {
   .card {
     width: calc(50% - 15px); /* Adjust the width for even smaller screens */
   }
+}
+
+.sidebar {
+  width: 250px;
+  height: 1100px;
+  margin-left: 250px;
+  margin-top: 40px;
+  /* background-color: skyblue; */
+  /* position: sticky; */
+}
+.Categories {
+  width: 230px;
+  height: 100px;
+  /* background-color: yellow; */
+  margin-left: 10px;
+  padding-top: 10px;
+}
+
+.Duration {
+  width: 230px;
+  height: 130px;
+  /* background-color: yellow; */
+  margin-left: 10px;
+  padding-top: 10px;
+}
+
+.Budget {
+  width: 230px;
+  height: 210px;
+  /* background-color: yellow; */
+  margin-left: 10px;
+  padding-top: 10px; 
+}
+
+.Hotel {
+  width: 220px;
+  height: 160px;
+  /* background-color: yellow; */
+  margin-left: 10px;
+  padding-top: 10px; 
+}
+
+.Inclusions {
+  width: 220px;
+  height: 135px;
+  /* background-color: yellow; */
+  margin-left: 10px;
+  padding-top: 10px;
+}
+
+.Activity {
+  width: 220px;
+  height: 180px;
+  /* background-color: yellow; */
+  margin-left: 10px;
+  padding-top: 10px;
+}
+
+.first-part {
+  font-weight: 700;
+  font-size: 20px;
+  vertical-align: baseline;
+  color: #3e3e3e;
+  padding-left: 13px;
+  padding-bottom: 10px;
+}
+
+.second-part {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0px;
+  position: relative;
+  color: #3e3e3e;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.second-part img {
+display: inline-block;
+vertical-align: middle;
 }
