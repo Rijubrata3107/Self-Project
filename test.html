@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test</title>
     <style>
-      .main {
-        width: 100vw;
-        height: 100vh;
+      .main-card {
+        width:750px;
+        height: auto;
+        background-color: skyblue;
+        display: inline-block;
+        
       }
 
       .card-box {
@@ -15,8 +18,8 @@
         height: 302px;
         /* background-color: blue; */
         border: 1px solid rgba(0, 0, 0, 0.87);
-        margin-left: 180px;
-        margin-top: 180px;
+        margin-left: 28px;
+        margin-top: 20px;
       }
 
       .img-box {
@@ -137,16 +140,42 @@
         display: inline-block;
         /* display: inline-flex;
         justify-content: flex-end; */
-        margin-left: 180px;
+        margin-left: 140px;
       }
 
       .added img {
         justify-content: center;
       }
+
+      .button_cont {
+        position: relative;
+        bottom: 30px;
+        margin-left: 480px;
+      }
+
+      .example_c {
+        color: #494949 !important;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: #ffffff;
+        padding: 10px 15px;
+        border: 2px solid #494949 !important;
+        display: inline-block;
+        transition: all 0.4s ease 0s;
+        font-size: 12px; /* Adjusted font size */
+      }
+
+      .example_c:hover {
+        color: #ffffff !important;
+        background: red;
+        border-color: red !important;
+        transition: all 0.4s ease 0s;
+      }
     </style>
   </head>
   <body>
-    <div class="main">
+    <div class="main-card">
+      <!-- card 1 -->
       <div class="card-box">
         <div class="img-box">
           <img src="./A-Goa-beach-Holiday.webp" alt="Goa Beach Holiday" />
@@ -178,12 +207,531 @@
 
         <div class="card-down">
           <div class="added">
-            <img src="./icons8-building-24.png" width="25" height="25" /><br />
+            <!-- <img src="./icons8-building-24.png" width="25" height="25" /><br /> -->
             Upto 2 Stars
           </div>
           <div class="added">Meals</div>
           <div class="added">Sightseeing</div>
-          <!-- <div class="added2">View Details</div> -->
+          <div class="added2">View Details</div>
+          <div class="button_cont">
+            <a
+              class="example_c"
+              href="add-website-here"
+              target="_blank"
+              rel="nofollow noopener"
+              >Customize & Get Quotes</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- card 2 -->
+
+      <div class="card-box">
+        <div class="img-box">
+          <img src="./A-Goa-beach-Holiday.webp" alt="Goa Beach Holiday" />
+        </div>
+        <div class="card-text">
+          <p class="c-pack">Most Reasonable Goa Honeymoon Tour Packages</p>
+          <p class="c-duration">5 Days & 4 Nights</p>
+          <p class="c-information">Starting from :</p>
+          <p class="c-price">&#8377;10,000/-</p>
+          <p class="c-information">Per Person on twin sharing</p>
+          <div class="c-hotel">
+            <p class="h-select">Hotel included in package:</p>
+
+            <input type="radio" id="hotel1" name="select-hotel" value="2" />
+            <label for="hotel1">2 Star</label>
+            <input type="radio" id="hotel2" name="select-hotel" value="3" />
+            <label for="hotel2"> 3 Star</label>
+            <input type="radio" id="hotel3" name="select-hotel" value="4" />
+            <label for="hotel3">4 Star</label>
+          </div>
+        </div>
+        <div class="c-other">
+          <div class="c-right">Hot Pick</div>
+          <div class="c-right">Water Activities</div>
+          <div class="c-right">Romantic Cruise</div>
+          <div class="c-right">Adventure</div>
+        </div>
+        <hr />
+
+        <div class="card-down">
+          <div class="added">
+            <!-- <img src="./icons8-building-24.png" width="25" height="25" /><br /> -->
+            Upto 2 Stars
+          </div>
+          <div class="added">Meals</div>
+          <div class="added">Sightseeing</div>
+          <div class="added2">View Details</div>
+          <div class="button_cont">
+            <a
+              class="example_c"
+              href="add-website-here"
+              target="_blank"
+              rel="nofollow noopener"
+              >Customize & Get Quotes</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- card 3 -->
+
+      <div class="card-box">
+        <div class="img-box">
+          <img src="./A-Goa-beach-Holiday.webp" alt="Goa Beach Holiday" />
+        </div>
+        <div class="card-text">
+          <p class="c-pack">Most Reasonable Goa Honeymoon Tour Packages</p>
+          <p class="c-duration">5 Days & 4 Nights</p>
+          <p class="c-information">Starting from :</p>
+          <p class="c-price">&#8377;10,000/-</p>
+          <p class="c-information">Per Person on twin sharing</p>
+          <div class="c-hotel">
+            <p class="h-select">Hotel included in package:</p>
+
+            <input type="radio" id="hotel1" name="select-hotel" value="2" />
+            <label for="hotel1">2 Star</label>
+            <input type="radio" id="hotel2" name="select-hotel" value="3" />
+            <label for="hotel2"> 3 Star</label>
+            <input type="radio" id="hotel3" name="select-hotel" value="4" />
+            <label for="hotel3">4 Star</label>
+          </div>
+        </div>
+        <div class="c-other">
+          <div class="c-right">Hot Pick</div>
+          <div class="c-right">Water Activities</div>
+          <div class="c-right">Romantic Cruise</div>
+          <div class="c-right">Adventure</div>
+        </div>
+        <hr />
+
+        <div class="card-down">
+          <div class="added">
+            <!-- <img src="./icons8-building-24.png" width="25" height="25" /><br /> -->
+            Upto 2 Stars
+          </div>
+          <div class="added">Meals</div>
+          <div class="added">Sightseeing</div>
+          <div class="added2">View Details</div>
+          <div class="button_cont">
+            <a
+              class="example_c"
+              href="add-website-here"
+              target="_blank"
+              rel="nofollow noopener"
+              >Customize & Get Quotes</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- card 4 -->
+
+      <div class="card-box">
+        <div class="img-box">
+          <img src="./A-Goa-beach-Holiday.webp" alt="Goa Beach Holiday" />
+        </div>
+        <div class="card-text">
+          <p class="c-pack">Most Reasonable Goa Honeymoon Tour Packages</p>
+          <p class="c-duration">5 Days & 4 Nights</p>
+          <p class="c-information">Starting from :</p>
+          <p class="c-price">&#8377;10,000/-</p>
+          <p class="c-information">Per Person on twin sharing</p>
+          <div class="c-hotel">
+            <p class="h-select">Hotel included in package:</p>
+
+            <input type="radio" id="hotel1" name="select-hotel" value="2" />
+            <label for="hotel1">2 Star</label>
+            <input type="radio" id="hotel2" name="select-hotel" value="3" />
+            <label for="hotel2"> 3 Star</label>
+            <input type="radio" id="hotel3" name="select-hotel" value="4" />
+            <label for="hotel3">4 Star</label>
+          </div>
+        </div>
+        <div class="c-other">
+          <div class="c-right">Hot Pick</div>
+          <div class="c-right">Water Activities</div>
+          <div class="c-right">Romantic Cruise</div>
+          <div class="c-right">Adventure</div>
+        </div>
+        <hr />
+
+        <div class="card-down">
+          <div class="added">
+            <!-- <img src="./icons8-building-24.png" width="25" height="25" /><br /> -->
+            Upto 2 Stars
+          </div>
+          <div class="added">Meals</div>
+          <div class="added">Sightseeing</div>
+          <div class="added2">View Details</div>
+          <div class="button_cont">
+            <a
+              class="example_c"
+              href="add-website-here"
+              target="_blank"
+              rel="nofollow noopener"
+              >Customize & Get Quotes</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- card 5 -->
+
+      <div class="card-box">
+        <div class="img-box">
+          <img src="./A-Goa-beach-Holiday.webp" alt="Goa Beach Holiday" />
+        </div>
+        <div class="card-text">
+          <p class="c-pack">Most Reasonable Goa Honeymoon Tour Packages</p>
+          <p class="c-duration">5 Days & 4 Nights</p>
+          <p class="c-information">Starting from :</p>
+          <p class="c-price">&#8377;10,000/-</p>
+          <p class="c-information">Per Person on twin sharing</p>
+          <div class="c-hotel">
+            <p class="h-select">Hotel included in package:</p>
+
+            <input type="radio" id="hotel1" name="select-hotel" value="2" />
+            <label for="hotel1">2 Star</label>
+            <input type="radio" id="hotel2" name="select-hotel" value="3" />
+            <label for="hotel2"> 3 Star</label>
+            <input type="radio" id="hotel3" name="select-hotel" value="4" />
+            <label for="hotel3">4 Star</label>
+          </div>
+        </div>
+        <div class="c-other">
+          <div class="c-right">Hot Pick</div>
+          <div class="c-right">Water Activities</div>
+          <div class="c-right">Romantic Cruise</div>
+          <div class="c-right">Adventure</div>
+        </div>
+        <hr />
+
+        <div class="card-down">
+          <div class="added">
+            <!-- <img src="./icons8-building-24.png" width="25" height="25" /><br /> -->
+            Upto 2 Stars
+          </div>
+          <div class="added">Meals</div>
+          <div class="added">Sightseeing</div>
+          <div class="added2">View Details</div>
+          <div class="button_cont">
+            <a
+              class="example_c"
+              href="add-website-here"
+              target="_blank"
+              rel="nofollow noopener"
+              >Customize & Get Quotes</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- card 6 -->
+
+      <div class="card-box">
+        <div class="img-box">
+          <img src="./A-Goa-beach-Holiday.webp" alt="Goa Beach Holiday" />
+        </div>
+        <div class="card-text">
+          <p class="c-pack">Most Reasonable Goa Honeymoon Tour Packages</p>
+          <p class="c-duration">5 Days & 4 Nights</p>
+          <p class="c-information">Starting from :</p>
+          <p class="c-price">&#8377;10,000/-</p>
+          <p class="c-information">Per Person on twin sharing</p>
+          <div class="c-hotel">
+            <p class="h-select">Hotel included in package:</p>
+
+            <input type="radio" id="hotel1" name="select-hotel" value="2" />
+            <label for="hotel1">2 Star</label>
+            <input type="radio" id="hotel2" name="select-hotel" value="3" />
+            <label for="hotel2"> 3 Star</label>
+            <input type="radio" id="hotel3" name="select-hotel" value="4" />
+            <label for="hotel3">4 Star</label>
+          </div>
+        </div>
+        <div class="c-other">
+          <div class="c-right">Hot Pick</div>
+          <div class="c-right">Water Activities</div>
+          <div class="c-right">Romantic Cruise</div>
+          <div class="c-right">Adventure</div>
+        </div>
+        <hr />
+
+        <div class="card-down">
+          <div class="added">
+            <!-- <img src="./icons8-building-24.png" width="25" height="25" /><br /> -->
+            Upto 2 Stars
+          </div>
+          <div class="added">Meals</div>
+          <div class="added">Sightseeing</div>
+          <div class="added2">View Details</div>
+          <div class="button_cont">
+            <a
+              class="example_c"
+              href="add-website-here"
+              target="_blank"
+              rel="nofollow noopener"
+              >Customize & Get Quotes</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- card 7 -->
+
+      <div class="card-box">
+        <div class="img-box">
+          <img src="./A-Goa-beach-Holiday.webp" alt="Goa Beach Holiday" />
+        </div>
+        <div class="card-text">
+          <p class="c-pack">Most Reasonable Goa Honeymoon Tour Packages</p>
+          <p class="c-duration">5 Days & 4 Nights</p>
+          <p class="c-information">Starting from :</p>
+          <p class="c-price">&#8377;10,000/-</p>
+          <p class="c-information">Per Person on twin sharing</p>
+          <div class="c-hotel">
+            <p class="h-select">Hotel included in package:</p>
+
+            <input type="radio" id="hotel1" name="select-hotel" value="2" />
+            <label for="hotel1">2 Star</label>
+            <input type="radio" id="hotel2" name="select-hotel" value="3" />
+            <label for="hotel2"> 3 Star</label>
+            <input type="radio" id="hotel3" name="select-hotel" value="4" />
+            <label for="hotel3">4 Star</label>
+          </div>
+        </div>
+        <div class="c-other">
+          <div class="c-right">Hot Pick</div>
+          <div class="c-right">Water Activities</div>
+          <div class="c-right">Romantic Cruise</div>
+          <div class="c-right">Adventure</div>
+        </div>
+        <hr />
+
+        <div class="card-down">
+          <div class="added">
+            <!-- <img src="./icons8-building-24.png" width="25" height="25" /><br /> -->
+            Upto 2 Stars
+          </div>
+          <div class="added">Meals</div>
+          <div class="added">Sightseeing</div>
+          <div class="added2">View Details</div>
+          <div class="button_cont">
+            <a
+              class="example_c"
+              href="add-website-here"
+              target="_blank"
+              rel="nofollow noopener"
+              >Customize & Get Quotes</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- card 8 -->
+
+      <div class="card-box">
+        <div class="img-box">
+          <img src="./A-Goa-beach-Holiday.webp" alt="Goa Beach Holiday" />
+        </div>
+        <div class="card-text">
+          <p class="c-pack">Most Reasonable Goa Honeymoon Tour Packages</p>
+          <p class="c-duration">5 Days & 4 Nights</p>
+          <p class="c-information">Starting from :</p>
+          <p class="c-price">&#8377;10,000/-</p>
+          <p class="c-information">Per Person on twin sharing</p>
+          <div class="c-hotel">
+            <p class="h-select">Hotel included in package:</p>
+
+            <input type="radio" id="hotel1" name="select-hotel" value="2" />
+            <label for="hotel1">2 Star</label>
+            <input type="radio" id="hotel2" name="select-hotel" value="3" />
+            <label for="hotel2"> 3 Star</label>
+            <input type="radio" id="hotel3" name="select-hotel" value="4" />
+            <label for="hotel3">4 Star</label>
+          </div>
+        </div>
+        <div class="c-other">
+          <div class="c-right">Hot Pick</div>
+          <div class="c-right">Water Activities</div>
+          <div class="c-right">Romantic Cruise</div>
+          <div class="c-right">Adventure</div>
+        </div>
+        <hr />
+
+        <div class="card-down">
+          <div class="added">
+            <!-- <img src="./icons8-building-24.png" width="25" height="25" /><br /> -->
+            Upto 2 Stars
+          </div>
+          <div class="added">Meals</div>
+          <div class="added">Sightseeing</div>
+          <div class="added2">View Details</div>
+          <div class="button_cont">
+            <a
+              class="example_c"
+              href="add-website-here"
+              target="_blank"
+              rel="nofollow noopener"
+              >Customize & Get Quotes</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- card 9 -->
+
+      <div class="card-box">
+        <div class="img-box">
+          <img src="./A-Goa-beach-Holiday.webp" alt="Goa Beach Holiday" />
+        </div>
+        <div class="card-text">
+          <p class="c-pack">Most Reasonable Goa Honeymoon Tour Packages</p>
+          <p class="c-duration">5 Days & 4 Nights</p>
+          <p class="c-information">Starting from :</p>
+          <p class="c-price">&#8377;10,000/-</p>
+          <p class="c-information">Per Person on twin sharing</p>
+          <div class="c-hotel">
+            <p class="h-select">Hotel included in package:</p>
+
+            <input type="radio" id="hotel1" name="select-hotel" value="2" />
+            <label for="hotel1">2 Star</label>
+            <input type="radio" id="hotel2" name="select-hotel" value="3" />
+            <label for="hotel2"> 3 Star</label>
+            <input type="radio" id="hotel3" name="select-hotel" value="4" />
+            <label for="hotel3">4 Star</label>
+          </div>
+        </div>
+        <div class="c-other">
+          <div class="c-right">Hot Pick</div>
+          <div class="c-right">Water Activities</div>
+          <div class="c-right">Romantic Cruise</div>
+          <div class="c-right">Adventure</div>
+        </div>
+        <hr />
+
+        <div class="card-down">
+          <div class="added">
+            <!-- <img src="./icons8-building-24.png" width="25" height="25" /><br /> -->
+            Upto 2 Stars
+          </div>
+          <div class="added">Meals</div>
+          <div class="added">Sightseeing</div>
+          <div class="added2">View Details</div>
+          <div class="button_cont">
+            <a
+              class="example_c"
+              href="add-website-here"
+              target="_blank"
+              rel="nofollow noopener"
+              >Customize & Get Quotes</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- card 10 -->
+
+      <div class="card-box">
+        <div class="img-box">
+          <img src="./A-Goa-beach-Holiday.webp" alt="Goa Beach Holiday" />
+        </div>
+        <div class="card-text">
+          <p class="c-pack">Most Reasonable Goa Honeymoon Tour Packages</p>
+          <p class="c-duration">5 Days & 4 Nights</p>
+          <p class="c-information">Starting from :</p>
+          <p class="c-price">&#8377;10,000/-</p>
+          <p class="c-information">Per Person on twin sharing</p>
+          <div class="c-hotel">
+            <p class="h-select">Hotel included in package:</p>
+
+            <input type="radio" id="hotel1" name="select-hotel" value="2" />
+            <label for="hotel1">2 Star</label>
+            <input type="radio" id="hotel2" name="select-hotel" value="3" />
+            <label for="hotel2"> 3 Star</label>
+            <input type="radio" id="hotel3" name="select-hotel" value="4" />
+            <label for="hotel3">4 Star</label>
+          </div>
+        </div>
+        <div class="c-other">
+          <div class="c-right">Hot Pick</div>
+          <div class="c-right">Water Activities</div>
+          <div class="c-right">Romantic Cruise</div>
+          <div class="c-right">Adventure</div>
+        </div>
+        <hr />
+
+        <div class="card-down">
+          <div class="added">
+            <!-- <img src="./icons8-building-24.png" width="25" height="25" /><br /> -->
+            Upto 2 Stars
+          </div>
+          <div class="added">Meals</div>
+          <div class="added">Sightseeing</div>
+          <div class="added2">View Details</div>
+          <div class="button_cont">
+            <a
+              class="example_c"
+              href="add-website-here"
+              target="_blank"
+              rel="nofollow noopener"
+              >Customize & Get Quotes</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- card 11 -->
+
+      <div class="card-box">
+        <div class="img-box">
+          <img src="./A-Goa-beach-Holiday.webp" alt="Goa Beach Holiday" />
+        </div>
+        <div class="card-text">
+          <p class="c-pack">Most Reasonable Goa Honeymoon Tour Packages</p>
+          <p class="c-duration">5 Days & 4 Nights</p>
+          <p class="c-information">Starting from :</p>
+          <p class="c-price">&#8377;10,000/-</p>
+          <p class="c-information">Per Person on twin sharing</p>
+          <div class="c-hotel">
+            <p class="h-select">Hotel included in package:</p>
+
+            <input type="radio" id="hotel1" name="select-hotel" value="2" />
+            <label for="hotel1">2 Star</label>
+            <input type="radio" id="hotel2" name="select-hotel" value="3" />
+            <label for="hotel2"> 3 Star</label>
+            <input type="radio" id="hotel3" name="select-hotel" value="4" />
+            <label for="hotel3">4 Star</label>
+          </div>
+        </div>
+        <div class="c-other">
+          <div class="c-right">Hot Pick</div>
+          <div class="c-right">Water Activities</div>
+          <div class="c-right">Romantic Cruise</div>
+          <div class="c-right">Adventure</div>
+        </div>
+        <hr />
+
+        <div class="card-down">
+          <div class="added">
+            <!-- <img src="./icons8-building-24.png" width="25" height="25" /><br /> -->
+            Upto 2 Stars
+          </div>
+          <div class="added">Meals</div>
+          <div class="added">Sightseeing</div>
+          <div class="added2">View Details</div>
+          <div class="button_cont">
+            <a
+              class="example_c"
+              href="add-website-here"
+              target="_blank"
+              rel="nofollow noopener"
+              >Customize & Get Quotes</a
+            >
+          </div>
         </div>
       </div>
     </div>
