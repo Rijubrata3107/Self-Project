@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test 8</title>
+    <style>
+      .trend-text {
+        height: 40px; /* Increased height to accommodate border */
+        width: 90px;
+        background-color: yellow;
+        text-align: center;
+        margin-left: 20px;
+        font-size: 18px;
+        line-height: 40px; /* Adjusted line-height to center text vertically */
+        padding: 0 20px;
+        border-top: 5px solid yellow; /* Added top border */
+        border-bottom: 5px solid yellow; /* Added bottom border */
+        font-weight: normal; /* Removed bold from "Trending" text */
+        text-transform: uppercase; /* Made "Trending" uppercase */
+      }
+
+      h2 {
+        font-size: 20px;
+        vertical-align: middle; /* Added vertical-align property to align vertically */
+      }
+
+      .txt3{
+
+        margin-left: 30px;
+      }
+
+      .rectangle2 {
+        display: flex;
+        flex-wrap: nowrap; /* Prevent wrapping of cards */
+        justify-content: flex-start; /* Align cards from the start */
+        gap: 15px;
+        margin-left: 50px;
+        
+      }
+
+      /* Hide scrollbar */
+      .rectangle::-webkit-scrollbar {
+        width: 0; /* Remove scrollbar width */
+        background: transparent; /* Set scrollbar background color to transparent */
+      }
+
+      /* Optionally, you can also hide scrollbar for Firefox */
+      .rectangle {
+        scrollbar-width: none; /* Firefox */
+      }
+
+      .card {
+        width: 150px;
+        height: 255px;
+        min-width: 150px; /* Set minimum width */
+        min-height: 225px; /* Set minimum height */
+        background-color: rgb(255, 255, 255);
+      }
+
+      .img-section {
+        width: 100%;
+        height: 75%;
+        background-color: blue;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .txt {
+        width: 100%;
+        height: 25%;
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .name {
+        margin: 0px;
+        font-size: 14px;
+        font-weight: bold;
+        color: rgb(62, 62, 62);
+      }
+
+      .pges {
+        margin: 0px;
+        font-size: 10px;
+        font-weight: bold;
+        color: gray;
+      }
+
+      .price {
+        margin: 0px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: right;
+        color: green;
+      }
+
+      /* .card-text{
+
+        width: 100%;
+        height: 100%;
+        top : 0;
+        left: 0;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
+      } */
+
+      /* Responsive Styles */
+      @media only screen and (max-width: 768px) {
+        .card {
+          width: calc(33.33% - 15px); /* Adjust the width for smaller screens */
+        }
+      }
+
+      @media only screen and (max-width: 576px) {
+        .card {
+          width: calc(
+            50% - 15px
+          ); /* Adjust the width for even smaller screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="trendcard">
+
+      <div class="txt3">
+        <h2>
+          <span class="trend-text">Trending</span>
+          Holiday Destinations
+        </h2>
+      </div>
+
+      <div class="rectangle2">
+        <!-- Andaman -->
+        <div class="card">
+          <div class="img-section">
+            <img src="./Card images/Andaman_Tour.webp" />
+            <!-- <div class="card-text">
+                View Package
+            </div> -->
+          </div>
+          <div class="txt">
+            <div class="txt1">
+              <p class="name">Andaman</p>
+              <p class="pges">72+ Packages</p>
+            </div>
+            <div class="txt2">
+              <p class="pges">Starting From</p>
+              <p class="price">&#8377;8,999</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Uttarakhand -->
+        <div class="card">
+          <div class="img-section">
+            <img src="./Card images/Uttarakhand_Tour.webp" />
+          </div>
+
+          <div class="txt">
+            <div class="txt1">
+              <p class="name">Uttarakhand</p>
+              <p class="pges">167+ Packages</p>
+            </div>
+            <div class="txt2">
+              <p class="pges">Starting From</p>
+              <p class="price">&#8377;7,999</p>
+            </div>
+          </div>
+        </div>
+        <!-- Bali -->
+        <div class="card">
+          <div class="img-section">
+            <img src="./Card images/Bali_Tour.webp" />
+          </div>
+
+          <div class="txt">
+            <div class="txt1">
+              <p class="name">Bali</p>
+              <p class="pges">144+ Packages</p>
+            </div>
+            <div class="txt2">
+              <p class="pges">Starting From</p>
+              <p class="price">&#8377;14,999</p>
+            </div>
+          </div>
+        </div>
+        <!-- Darjeeling -->
+        <div class="card">
+          <div class="img-section">
+            <img src="./Card images/Sikkim-Gangtok-Darjeeling_Tour.webp" />
+          </div>
+
+          <div class="txt">
+            <div class="txt1">
+              <p class="name">Darjeeling</p>
+              <p class="pges">37+ Packages</p>
+            </div>
+            <div class="txt2">
+              <p class="pges">Starting From</p>
+              <p class="price">&#8377;12,999</p>
+            </div>
+          </div>
+        </div>
+        <!-- Singapore -->
+        <div class="card">
+          <div class="img-section">
+            <img src="./Card images/Singapore_Tour.webp" />
+          </div>
+
+          <div class="txt">
+            <div class="txt1">
+              <p class="name">Singapore</p>
+              <p class="pges">195+ Packages</p>
+            </div>
+            <div class="txt2">
+              <p class="pges">Starting From</p>
+              <p class="price">&#8377;18,999</p>
+            </div>
+          </div>
+        </div>
+        <!-- Hong Kong -->
+        <div class="card">
+          <div class="img-section">
+            <img src="./Card images/Hong_Kong_Tour.webp" />
+          </div>
+
+          <div class="txt">
+            <div class="txt1">
+              <p class="name">Hong Kong</p>
+              <p class="pges">95+ Packages</p>
+            </div>
+            <div class="txt2">
+              <p class="pges">Starting From</p>
+              <p class="price">&#8377;24,999</p>
+            </div>
+          </div>
+        </div>
+        <!-- Kashmir -->
+        <!-- <div class="card">
+          <div class="img-section">
+            <img src="Kashmir_Tour.webp" />
+          </div>
+
+          <div class="txt">
+            <div class="txt1">
+              <p class="name">Kashmir</p>
+              <p class="pges">103+ Packages</p>
+            </div>
+            <div class="txt2">
+              <p class="pges">Starting From</p>
+              <p class="price">&#8377;7,999</p>
+            </div>
+          </div>
+        </div> -->
+
+    </div>
+   
+
+    
+
+    
+  </body>
+</html>
