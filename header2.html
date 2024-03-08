@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+        /* Custom styles for the header and image slider */
+        .header {
+            background-color: #f8f9fa; /* Change background color as needed */
+            padding: 20px 0;
+        }
+
+        .logo img {
+            height: 30px; /* Adjust height of the logo image */
+            width: auto; /* Ensure image width adjusts proportionally */
+            margin-top: 5px;
+            z-index: 3;
+        }
+
+        .carousel-item {
+            height: 65vh;
+            min-height: 350px;
+            background: no-repeat center center scroll;
+            background-size: cover;
+            position: relative;
+        }
+        .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Change text color as needed */
+    width: 70%; /* Adjust width as needed */
+    text-align: center;
+}
+
+.carousel-caption input[type="text"],
+.carousel-caption select {
+    margin-bottom: 10px;
+    width: 40%; /* Adjust width as needed */
+    padding: 5px; /* Adjust padding as needed */
+    display: inline-block; /* Display inputs as inline-block elements */
+    margin-right: 5px; /* Add some space between inputs */
+}
+
+.carousel-caption input[type="text"]:last-child,
+.carousel-caption select:last-child {
+    margin-right: 0; /* Ensure last input doesn't have right margin */
+}
+
+
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <div class="logo">
+                <img src="./Card images/pritwish-travels-high-resolution-logo-transparent.png" alt="" />
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Flight</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hotel</a>
+                    </li>
+                    <!-- Add dropdown option under Packages -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Packages
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Honeymoon Package</a>
+                            <a class="dropdown-item" href="#">Family Package</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Special Offers</a>
+                        </div>
+                    </li>
+                    <!-- End of dropdown option -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header with image slider -->
+    <header class="header">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./Card images/photo-1538947378928-4561e14354fe-road.avif" alt="" />
+                    <div class="carousel-caption">
+                        <input type="text" list="countries" placeholder="Select Country" />
+                        <datalist id="countries">
+                            <option value="USA">
+                            <option value="UK">
+                            <option value="Canada">
+                            <!-- Add more countries as needed -->
+                        </datalist>
+                        <input type="text"list="monthss" placeholder="Month" />
+                        <datalist id="months">
+                          <option value="Jan">
+                          <option value="Feb">
+                          <option value="Mar">
+                          <!-- Add more countries as needed -->
+                      </datalist>
+                    </div>
+                </div>
+              
+                       
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Bootstrap scripts (required for the carousel) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

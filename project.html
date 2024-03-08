@@ -6,32 +6,114 @@
 <title>Document</title>
 
 <link rel="stylesheet" href="project.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+>
 </head>
 <body>
-<nav>
-  <div class="logo">
-    <img src="./Card images/pritwish-travels-high-resolution-logo-transparent.png" alt="Logo">
-  </div>
-  <div class="navbar">
-    <div class="box"><a href="#">Home</a></div>
-    <div class="box"><a href="#">Flight</a></div>
-    <div class="box"><a href="#">Hotel</a></div>
-    <div class="box">
-      <a href="#">Packages</a>
-      <div class="dropdown-content">
-        <a href="#">Holiday Package</a>
-        <a href="#">Family Package</a>
-        <a href="#">Honeymoon Package</a>
+ <!-- Navigation -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+    <div class="logo">
+        <img
+          src="./Card images/pritwish-travels-high-resolution-logo-transparent.png"alt=""/>
       </div>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarResponsive"
+      aria-controls="navbarResponsive"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Flight</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Hotel</a>
+        </li> <li class="nav-item">
+            <a class="nav-link" href="#">Packages</a>
+            
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
     </div>
-    <div class="box"><a href="#">Contact Us</a></div>
   </div>
 </nav>
 
-<div class="img_navbar">
-  <img src="./Card images/panoramic-view-snowy-mountains-upper-260nw-1185874780.jpg" alt="Snowy Mountains" width="100%" height="200px">
-  <div class="img-text">India Tour Packages</div>
-</div>
+<!-- Header with image slider -->
+<header class="header">
+  
+  <div
+    id="carouselExampleCaptions"
+    class="carousel slide"
+    data-ride="carousel"
+  >
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="./Card images/photo-1538947378928-4561e14354fe-road.avif"
+          alt=""
+        />
+        <div class="carousel-caption"></div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="./Card images/photo-1499174549139-68d3f37243b4-building.avif"
+          alt=""
+        />
+        <div class="carousel-caption"></div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="./Card images/photo-1537346439163-eafb59bdc400-sea.avif"
+          alt=""
+        />
+        <div class="carousel-caption"></div>
+      </div>
+
+      <div class="carousel-item">
+        <img
+          src="./Card images/photo-1538032103457-2d54dc211025-tree.avif"
+          alt=""
+        />
+        <div class="carousel-caption"></div>
+      </div>
+    </div>
+    <a
+      class="carousel-control-prev"
+      href="#carouselExampleCaptions"
+      role="button"
+      data-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a
+      class="carousel-control-next"
+      href="#carouselExampleCaptions"
+      role="button"
+      data-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</header>
+
+<!-- Bootstrap scripts (required for the carousel) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <div class="information">
   <p>Indian Holiday</p>
@@ -964,9 +1046,146 @@
 </div>
 
 
-<!-- faq -->
+ <!-- Trend Card -->
+<div class="trendcard">
 
-<!-- <div class="faq">
+  <div class="txt3">
+    <h2>
+      <span class="trend-text">Trending</span>
+      Holiday Destinations
+    </h2>
+  </div>
+
+  <div class="rectangle2">
+    <!-- Andaman -->
+    <div class="card">
+      <div class="img-section">
+        <img src="./Card images/Andaman_Tour.webp" />
+        <!-- <div class="card-text">
+            View Package
+        </div> -->
+      </div>
+      <div class="txt">
+        <div class="txt1">
+          <p class="name">Andaman</p>
+          <p class="pges">72+ Packages</p>
+        </div>
+        <div class="txt2">
+          <p class="pges">Starting From</p>
+          <p class="price">&#8377;8,999</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Uttarakhand -->
+    <div class="card">
+      <div class="img-section">
+        <img src="./Card images/Uttarakhand_Tour.webp" />
+      </div>
+
+      <div class="txt">
+        <div class="txt1">
+          <p class="name">Uttarakhand</p>
+          <p class="pges">167+ Packages</p>
+        </div>
+        <div class="txt2">
+          <p class="pges">Starting From</p>
+          <p class="price">&#8377;7,999</p>
+        </div>
+      </div>
+    </div>
+    <!-- Bali -->
+    <div class="card">
+      <div class="img-section">
+        <img src="./Card images/Bali_Tour.webp" />
+      </div>
+
+      <div class="txt">
+        <div class="txt1">
+          <p class="name">Bali</p>
+          <p class="pges">144+ Packages</p>
+        </div>
+        <div class="txt2">
+          <p class="pges">Starting From</p>
+          <p class="price">&#8377;14,999</p>
+        </div>
+      </div>
+    </div>
+    <!-- Darjeeling -->
+    <div class="card">
+      <div class="img-section">
+        <img src="./Card images/Sikkim-Gangtok-Darjeeling_Tour.webp" />
+      </div>
+
+      <div class="txt">
+        <div class="txt1">
+          <p class="name">Darjeeling</p>
+          <p class="pges">37+ Packages</p>
+        </div>
+        <div class="txt2">
+          <p class="pges">Starting From</p>
+          <p class="price">&#8377;12,999</p>
+        </div>
+      </div>
+    </div>
+    <!-- Singapore -->
+    <div class="card">
+      <div class="img-section">
+        <img src="./Card images/Singapore_Tour.webp" />
+      </div>
+
+      <div class="txt">
+        <div class="txt1">
+          <p class="name">Singapore</p>
+          <p class="pges">195+ Packages</p>
+        </div>
+        <div class="txt2">
+          <p class="pges">Starting From</p>
+          <p class="price">&#8377;18,999</p>
+        </div>
+      </div>
+    </div>
+    <!-- Hong Kong -->
+    <div class="card">
+      <div class="img-section">
+        <img src="./Card images/Hong_Kong_Tour.webp" />
+      </div>
+
+      <div class="txt">
+        <div class="txt1">
+          <p class="name">Hong Kong</p>
+          <p class="pges">95+ Packages</p>
+        </div>
+        <div class="txt2">
+          <p class="pges">Starting From</p>
+          <p class="price">&#8377;24,999</p>
+        </div>
+      </div>
+    </div>
+    <!-- Kashmir -->
+    <!-- <div class="card">
+      <div class="img-section">
+        <img src="Kashmir_Tour.webp" />
+      </div>
+
+      <div class="txt">
+        <div class="txt1">
+          <p class="name">Kashmir</p>
+          <p class="pges">103+ Packages</p>
+        </div>
+        <div class="txt2">
+          <p class="pges">Starting From</p>
+          <p class="price">&#8377;7,999</p>
+        </div>
+      </div>
+    </div> -->
+
+</div>
+
+
+<!-- faq -->
+<!-- 
+ <div class="faq">
   <h2>FAQs For India</h2>
   <p class="faq1">
     <details>
@@ -1060,6 +1279,6 @@
     </details>
   </p>
   <hr>
-</div> -->
+</div>-->
 </body>
-</html>
+</html> 
