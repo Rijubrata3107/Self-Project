@@ -1,0 +1,120 @@
+
+.header {
+  background-color: #f8f9fa; /* Change background color as needed */
+  padding: 20px 0;
+}
+
+.logo img {
+  height: 30px; /* Adjust height of the logo image */
+  width: auto; /* Ensure image width adjusts proportionally */
+  margin-top: 5px;
+  z-index: 3;
+}
+
+.navbar-nav .dropdown-menu {
+  display: none;
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+.carousel-item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  background-size: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff; /* Change text color as needed */
+}
+
+.carousel-caption h5 {
+  font-size: 2.5rem; /* Adjust font size as needed */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.carousel-caption p {
+  font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#carouselExampleCaptions{
+  width: 100%;
+}
+
+
+.img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: light gray;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+  margin-top: 5px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.chart {
+  width: 90%;
+  margin: 0 auto; /* Center the chart horizontally */
+}
+
+.chart h2 {
+  margin-left: 100px; /* Adjust the left margin as needed */
+}
+
+.chart table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 6px;
+  text-align: left;
+}
+
+th {
+  background-color: rgba(128, 128, 128, 0.526);
+  font-size: 16px;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+.details {
+  max-width: 200px; /* Adjust the maximum width as needed */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.details a {
+  color: blue;
+  text-decoration: underline;
+}
+
+

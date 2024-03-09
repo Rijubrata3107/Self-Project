@@ -1,6 +1,15 @@
+body{
+  margin: 0%;
+  padding: 0%;
+}
 .header {
   background-color: #f8f9fa; /* Change background color as needed */
   padding: 20px 0;
+}
+
+.box{
+  width:100%;
+
 }
 
 .logo img {
@@ -39,6 +48,7 @@
   height: 100%;
   object-fit: cover;
 }
+
 #carouselExampleCaptions{
   width: 100%;
 }
@@ -54,69 +64,103 @@
   margin-top: 5px;
 }
 
-.information p {
-  margin-left: 270px;
-  margin-right: 270px;
+.mainbox{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.chart {
+  width: 100%;
 }
 
-.table {
-  margin-top: 20px;
+.chart h2{
+  margin-top: 5%;
+}
+.chart table {
+  width: 100%;
   border-collapse: collapse;
-  margin-left: 270px;
-  margin-right: 270px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.table td {
-  padding: 8px;
-  border: 1px solid black;
-  text-align: center;
+th, td {
+  border: 1px solid #ddd;
+  padding: 6px;
+  text-align: left;
 }
 
-.table th {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  margin-top: 20px;
+th {
+  background-color: rgba(128, 128, 128, 0.526);
+  font-size: 16px;
 }
 
-.heading {
-  margin-top: 50px;
-  margin-left: 0px;
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+.details {
+  max-width: 200px; /* Adjust the maximum width as needed */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.details a {
+  color: blue;
+  text-decoration: underline;
 }
 
 .checkbox-container {
   display: flex;
-  margin-top: 40px;
-  margin-left: 270px;
+  padding-top: 5%;
   
 }
 
-.checkbox-container input[type="checkbox"] {
-  margin-right: 5px;
-}
 
 .random {
   padding-right: 8px;
   font-size: 23px;
 }
 
-.cb1 {
+.checkbox-container {
   display: flex;
   align-items: center;
-  font-size: 23px;
 }
-.cb2 {
+
+.checkbox {
   display: flex;
   align-items: center;
-  margin-left: 5px;
-  font-size: 23px;
+  padding-left: 2%;
 }
+
+.checkbox input[type="checkbox"] {
+  margin-right: 5px;
+  height: 23px;
+  width: 23px;
+}
+
+.checkbox label {
+  font-size: 23px;
+  display: inline-block; /* Ensure label is on the same line */
+}
+
+.checkbox-container p {
+  margin: 0; /* Remove default margin from the paragraph */
+}
+
 
 /* body {
   margin: 0px;
 } */
 
 .main {
-  width: 100vw;
+  width: 100%;
   
   display: flex;
   /* justify-content: center; */
@@ -129,8 +173,6 @@
   justify-content: flex-start; /* Align cards from the start */
   gap: 15px;
   overflow-x: auto; /* Enable horizontal scrolling */
-  margin-left: 270px;
-  margin-right: 270px;
   margin-top: 40px;
   
   
