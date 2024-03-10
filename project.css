@@ -174,7 +174,8 @@ tr:hover {
   gap: 15px;
   overflow-x: auto; /* Enable horizontal scrolling */
   margin-top: 40px;
-  
+  margin-left: 4%;
+  margin-right: 4%;
   
 }
 
@@ -254,15 +255,12 @@ tr:hover {
   display: inline-flex;
   /* width: auto;
   height: 1200px; */
+  margin-top: 2%;
+  margin-left: 7%;
 }
 .sidebar {
-  width: 250px;
+  width: 90%;
   height: 1100px;
- 
- 
-  margin: 0;
-  margin-left: 250px;
-  margin-top: 40px;
   /* background-color: skyblue; */
   /* position:sticky; */
 }
@@ -346,12 +344,11 @@ vertical-align: middle;
 }
 
 .main-card {
-  width:750px;
+  width:800px;
   height: auto;
   /* background-color: skyblue; */
   /* display:grid; */
-  margin-left: 80px;
-  margin-top: 30px;
+  margin-left: 8%;
   
 }
 
@@ -360,7 +357,7 @@ vertical-align: middle;
   height: 302px;
   /* background-color: blue; */
   border: 1px solid rgba(0, 0, 0, 0.87);
-  margin-left: 28px;
+  
   margin-top: 20px;
   display: inline-block;
 }

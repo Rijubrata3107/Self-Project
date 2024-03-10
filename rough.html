@@ -6,59 +6,73 @@
     <title>Document</title>
 
     <style>
-        .inline-block-example {
-            display: inline-block;
-            width: 200px; /* Example width */
-            background-color: lightblue;
-            padding: 10px;
-            border: 1px solid blue;
-            margin-right: 20px; /* Add margin to create space between the two divs */
-        }
+        .clearfix:after,
+.container-fluid:after,
+.container:after,
+.row:after {
+    clear: both;
+}
 
-        .second-div {
-            display: inline-flex;
-            width: 200px; /* Example width */
-            height:100px;
-            background-color: lightgreen; /* Different background color for differentiation */
-            padding: 10px;
-            border: 1px solid green; /* Different border color for differentiation */
-            flex-wrap: wrap;
-        }
+.clearfix:after,
+.clearfix:before,
+.container-fluid:after,
+.container-fluid:before,
+.container:after,
+.container:before,
+.row:after,
+.row:before {
+    display: table;
+    content: " ";
+}
 
-        .inner{
-            
-            height: 20px;
-            width:30px;
-            border-radius: 20px;
-            background-color: brown;
-            text-align: center;
-            margin-left: 5px;
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    outline: none;
+}
 
-            
-        }
+a, abbr, address, article, aside, audio, b, blockquote, body, button, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, input, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, select, small, span, strong, sub, summary, sup, table, tbody, td, textarea, tfoot, th, thead, time, tr, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+* {
+    font-family: Lato, sans-serif !important;
+}
+
+.pfc3 {
+    color: #3e3e3e !important;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #2b2b2b;
+    background-color: #fff;
+}
+
+html {
+    font-size: 16px;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
     </style>
 </head>
 <body>
-    <div class="inline-block-example">
-        <p>This is an example of inline-block.</p>
-        <p>It combines features of both inline and block elements.</p>
-    </div>
-    
-    <!-- Second div alongside the first one -->
-    <div class="second-div">
-       <div class="inner">one</div>
-       <div class="inner">one</div>
-       <div class="inner">one</div>
-       <div class="inner">one</div>
-       <!-- <div class="inner">one</div>
-       <div class="inner">one</div>
-       <div class="inner">one</div>
-       <div class="inner">one</div>
-       <div class="inner">one</div>
-       <div class="inner">one</div>
-       <div class="inner">one</div>
-       <div class="inner">one</div> -->
-       
-    </div>
+    sxm cnbv
+    nkhbiyubjgsu
+    kNXHi
+    lnhkZX
+     ZBGH
 </body>
 </html>
